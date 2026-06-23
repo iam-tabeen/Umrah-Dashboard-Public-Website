@@ -40,7 +40,7 @@ export function BuiltForPakistan() {
           backgroundSize: "28px 28px",
         }}
       />
-      <div className="container-x text-foreground">
+      <div className="container-x relative z-10 text-foreground">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <Badge className="border-0 bg-accent text-accent-foreground">🇵🇰 Built for Pakistan</Badge>
           <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">

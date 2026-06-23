@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Menu, X } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/constants";
+import { MessageCircle, Menu, X, ArrowRightIcon } from "lucide-react";
+import { WHATSAPP_URL, DEMO_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
 
@@ -33,7 +33,7 @@ export function Nav() {
     >
       <div className="container-x flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2 text-lg font-semibold tracking-tight">
-          <img src={logo} alt="Umrah Dashboard" className="h-16 w-auto" />
+          <img src={logo} alt="Umrah Dashboard" className="h-14 w-auto" />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -50,9 +50,9 @@ export function Nav() {
 
         <div className="hidden md:block">
           <Button asChild variant="whatsapp">
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="h-4 w-4" />
-              Book a Free Demo
+            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+              <ArrowRightIcon className="h-4 w-4" />
+              Get a Free Demo
             </a>
           </Button>
         </div>
@@ -80,7 +80,7 @@ export function Nav() {
               </a>
             ))}
             <Button asChild variant="whatsapp">
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-4 w-4" />
                 Book a Free Demo
               </a>

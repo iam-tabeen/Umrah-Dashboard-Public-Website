@@ -1,5 +1,7 @@
 import { FadeIn } from "@/components/FadeIn";
 import { AlertTriangle, Clock, MessageSquareX, FileQuestion } from "lucide-react";
+import { motion } from "framer-motion";
+import cornerImg from "@/assets/corner.png";
 
 const items = [
   {
@@ -26,8 +28,17 @@ const items = [
 
 export function Problem() {
   return (
-    <section className="py-20 md:py-28">
-      <div className="container-x">
+    <section className="relative py-20 md:py-28">
+      {/* corner decoration — right side, 50% off screen */}
+      <motion.img
+        src={cornerImg}
+        alt=""
+        className="pointer-events-none absolute right-0 top-0 z-20 h-auto w-auto max-w-[40vw] translate-x-1/2 -translate-y-1/2 opacity-40 sm:max-w-[28%]"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 60, ease: "linear", repeat: Infinity }}
+      />
+
+      <div className="container-x relative z-10">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">The problem</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Sound familiar?</h2>
