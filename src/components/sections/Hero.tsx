@@ -17,7 +17,7 @@ export function Hero() {
       <motion.img
         src={cornerImg}
         alt=""
-        className="pointer-events-none absolute left-0 top-0 z-0 h-auto w-auto max-w-[30%] -translate-x-1/2 -translate-y-1/2 opacity-50"
+        className="pointer-events-none absolute left-0 top-0 z-0 h-auto w-auto max-w-[40vw] -translate-x-1/2 -translate-y-1/2 opacity-50 sm:max-w-[30%]"
         animate={{ rotate: 360 }}
         transition={{ duration: 40, ease: "linear", repeat: Infinity }}
       />
@@ -29,7 +29,7 @@ export function Hero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground shadow-card-soft">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-whatsapp)]" />
+            <span className="text-sm leading-none">🇵🇰</span>
             Built for Pakistani Umrah agencies
           </div>
 
@@ -38,7 +38,7 @@ export function Hero() {
             <span className="text-gradient">Excel & WhatsApp</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-full text-base text-muted-foreground sm:text-lg lg:max-w-xl">
             A complete CRM built for Pakistani Umrah agencies — build a full
             package quote, generate a professional invoice, and share it on
             WhatsApp, all in under 60 seconds.
