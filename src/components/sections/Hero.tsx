@@ -33,7 +33,7 @@ export function Hero() {
             Built for Pakistani Umrah agencies
           </div>
 
-          <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
             Stop Calculating Umrah Packages on{" "}
             <span className="text-gradient">Excel & WhatsApp</span>
           </h1>
@@ -59,15 +59,15 @@ export function Hero() {
           </ul>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild variant="hero" size="xl">
+            <Button asChild variant="hero" size="xl" className="w-full whitespace-normal sm:w-auto sm:whitespace-nowrap">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 Get Started — PKR 14,999 One-Time
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
-            <Button asChild variant="outline" size="xl">
+            <Button asChild variant="outline" size="xl" className="w-full sm:w-auto">
               <a href="#solution">
-                <ArrowRight className="h-4 w-4" />
+                <PlayCircle className="h-4 w-4" />
                 See How It Works
               </a>
             </Button>
@@ -82,7 +82,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
-          <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-black/20 opacity-20 blur-2xl" />
+          <div className="absolute -inset-2 -z-10 rounded-[2rem] bg-black/20 opacity-20 blur-2xl sm:-inset-6" />
           <div className="overflow-hidden rounded-2xl border-4 border-gray-300 bg-card ">
             <img
               src={dashboardImg}
